@@ -1,0 +1,345 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EF9612A-8A17-4FDD-A3B6-A429E2552C39}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rental_housing</RootNamespace>
+    <AssemblyName>rental-housing</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44347</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="images\rental-housing-logo-min.jpg" />
+    <Content Include="images\rental-housing-logo.jpg" />
+    <Content Include="images\ViewProperty\bed.jpg" />
+    <Content Include="images\ViewProperty\bed2.jpeg" />
+    <Content Include="images\ViewProperty\e.jpg" />
+    <Content Include="images\ViewProperty\front.jpg" />
+    <Content Include="images\ViewProperty\hall.jpg" />
+    <Content Include="images\ViewProperty\house.jpg" />
+    <Content Include="images\ViewProperty\kitchen.jpg" />
+    <Content Include="Scripts\tilt\tilt.jquery.min.js" />
+    <Content Include="Styles\LoginSignup.css" />
+    <Content Include="Styles\Semantic-UI\components\accordion.css" />
+    <Content Include="Styles\Semantic-UI\components\accordion.js" />
+    <Content Include="Styles\Semantic-UI\components\accordion.min.css" />
+    <Content Include="Styles\Semantic-UI\components\accordion.min.js" />
+    <Content Include="Styles\Semantic-UI\components\ad.css" />
+    <Content Include="Styles\Semantic-UI\components\ad.min.css" />
+    <Content Include="Styles\Semantic-UI\components\api.js" />
+    <Content Include="Styles\Semantic-UI\components\api.min.js" />
+    <Content Include="Styles\Semantic-UI\components\breadcrumb.css" />
+    <Content Include="Styles\Semantic-UI\components\breadcrumb.min.css" />
+    <Content Include="Styles\Semantic-UI\components\button.css" />
+    <Content Include="Styles\Semantic-UI\components\button.min.css" />
+    <Content Include="Styles\Semantic-UI\components\card.css" />
+    <Content Include="Styles\Semantic-UI\components\card.min.css" />
+    <Content Include="Styles\Semantic-UI\components\checkbox.css" />
+    <Content Include="Styles\Semantic-UI\components\checkbox.js" />
+    <Content Include="Styles\Semantic-UI\components\checkbox.min.css" />
+    <Content Include="Styles\Semantic-UI\components\checkbox.min.js" />
+    <Content Include="Styles\Semantic-UI\components\colorize.js" />
+    <Content Include="Styles\Semantic-UI\components\colorize.min.js" />
+    <Content Include="Styles\Semantic-UI\components\comment.css" />
+    <Content Include="Styles\Semantic-UI\components\comment.min.css" />
+    <Content Include="Styles\Semantic-UI\components\container.css" />
+    <Content Include="Styles\Semantic-UI\components\container.min.css" />
+    <Content Include="Styles\Semantic-UI\components\dimmer.css" />
+    <Content Include="Styles\Semantic-UI\components\dimmer.js" />
+    <Content Include="Styles\Semantic-UI\components\dimmer.min.css" />
+    <Content Include="Styles\Semantic-UI\components\dimmer.min.js" />
+    <Content Include="Styles\Semantic-UI\components\divider.css" />
+    <Content Include="Styles\Semantic-UI\components\divider.min.css" />
+    <Content Include="Styles\Semantic-UI\components\dropdown.css" />
+    <Content Include="Styles\Semantic-UI\components\dropdown.js" />
+    <Content Include="Styles\Semantic-UI\components\dropdown.min.css" />
+    <Content Include="Styles\Semantic-UI\components\dropdown.min.js" />
+    <Content Include="Styles\Semantic-UI\components\embed.css" />
+    <Content Include="Styles\Semantic-UI\components\embed.js" />
+    <Content Include="Styles\Semantic-UI\components\embed.min.css" />
+    <Content Include="Styles\Semantic-UI\components\embed.min.js" />
+    <Content Include="Styles\Semantic-UI\components\feed.css" />
+    <Content Include="Styles\Semantic-UI\components\feed.min.css" />
+    <Content Include="Styles\Semantic-UI\components\flag.css" />
+    <Content Include="Styles\Semantic-UI\components\flag.min.css" />
+    <Content Include="Styles\Semantic-UI\components\form.css" />
+    <Content Include="Styles\Semantic-UI\components\form.js" />
+    <Content Include="Styles\Semantic-UI\components\form.min.css" />
+    <Content Include="Styles\Semantic-UI\components\form.min.js" />
+    <Content Include="Styles\Semantic-UI\components\grid.css" />
+    <Content Include="Styles\Semantic-UI\components\grid.min.css" />
+    <Content Include="Styles\Semantic-UI\components\header.css" />
+    <Content Include="Styles\Semantic-UI\components\header.min.css" />
+    <Content Include="Styles\Semantic-UI\components\icon.css" />
+    <Content Include="Styles\Semantic-UI\components\icon.min.css" />
+    <Content Include="Styles\Semantic-UI\components\image.css" />
+    <Content Include="Styles\Semantic-UI\components\image.min.css" />
+    <Content Include="Styles\Semantic-UI\components\input.css" />
+    <Content Include="Styles\Semantic-UI\components\input.min.css" />
+    <Content Include="Styles\Semantic-UI\components\item.css" />
+    <Content Include="Styles\Semantic-UI\components\item.min.css" />
+    <Content Include="Styles\Semantic-UI\components\label.css" />
+    <Content Include="Styles\Semantic-UI\components\label.min.css" />
+    <Content Include="Styles\Semantic-UI\components\list.css" />
+    <Content Include="Styles\Semantic-UI\components\list.min.css" />
+    <Content Include="Styles\Semantic-UI\components\loader.css" />
+    <Content Include="Styles\Semantic-UI\components\loader.min.css" />
+    <Content Include="Styles\Semantic-UI\components\menu.css" />
+    <Content Include="Styles\Semantic-UI\components\menu.min.css" />
+    <Content Include="Styles\Semantic-UI\components\message.css" />
+    <Content Include="Styles\Semantic-UI\components\message.min.css" />
+    <Content Include="Styles\Semantic-UI\components\modal.css" />
+    <Content Include="Styles\Semantic-UI\components\modal.js" />
+    <Content Include="Styles\Semantic-UI\components\modal.min.css" />
+    <Content Include="Styles\Semantic-UI\components\modal.min.js" />
+    <Content Include="Styles\Semantic-UI\components\nag.css" />
+    <Content Include="Styles\Semantic-UI\components\nag.js" />
+    <Content Include="Styles\Semantic-UI\components\nag.min.css" />
+    <Content Include="Styles\Semantic-UI\components\nag.min.js" />
+    <Content Include="Styles\Semantic-UI\components\placeholder.css" />
+    <Content Include="Styles\Semantic-UI\components\placeholder.min.css" />
+    <Content Include="Styles\Semantic-UI\components\popup.css" />
+    <Content Include="Styles\Semantic-UI\components\popup.js" />
+    <Content Include="Styles\Semantic-UI\components\popup.min.css" />
+    <Content Include="Styles\Semantic-UI\components\popup.min.js" />
+    <Content Include="Styles\Semantic-UI\components\progress.css" />
+    <Content Include="Styles\Semantic-UI\components\progress.js" />
+    <Content Include="Styles\Semantic-UI\components\progress.min.css" />
+    <Content Include="Styles\Semantic-UI\components\progress.min.js" />
+    <Content Include="Styles\Semantic-UI\components\rail.css" />
+    <Content Include="Styles\Semantic-UI\components\rail.min.css" />
+    <Content Include="Styles\Semantic-UI\components\rating.css" />
+    <Content Include="Styles\Semantic-UI\components\rating.js" />
+    <Content Include="Styles\Semantic-UI\components\rating.min.css" />
+    <Content Include="Styles\Semantic-UI\components\rating.min.js" />
+    <Content Include="Styles\Semantic-UI\components\reset.css" />
+    <Content Include="Styles\Semantic-UI\components\reset.min.css" />
+    <Content Include="Styles\Semantic-UI\components\reveal.css" />
+    <Content Include="Styles\Semantic-UI\components\reveal.min.css" />
+    <Content Include="Styles\Semantic-UI\components\search.css" />
+    <Content Include="Styles\Semantic-UI\components\search.js" />
+    <Content Include="Styles\Semantic-UI\components\search.min.css" />
+    <Content Include="Styles\Semantic-UI\components\search.min.js" />
+    <Content Include="Styles\Semantic-UI\components\segment.css" />
+    <Content Include="Styles\Semantic-UI\components\segment.min.css" />
+    <Content Include="Styles\Semantic-UI\components\shape.css" />
+    <Content Include="Styles\Semantic-UI\components\shape.js" />
+    <Content Include="Styles\Semantic-UI\components\shape.min.css" />
+    <Content Include="Styles\Semantic-UI\components\shape.min.js" />
+    <Content Include="Styles\Semantic-UI\components\sidebar.css" />
+    <Content Include="Styles\Semantic-UI\components\sidebar.js" />
+    <Content Include="Styles\Semantic-UI\components\sidebar.min.css" />
+    <Content Include="Styles\Semantic-UI\components\sidebar.min.js" />
+    <Content Include="Styles\Semantic-UI\components\site.css" />
+    <Content Include="Styles\Semantic-UI\components\site.js" />
+    <Content Include="Styles\Semantic-UI\components\site.min.css" />
+    <Content Include="Styles\Semantic-UI\components\site.min.js" />
+    <Content Include="Styles\Semantic-UI\components\state.js" />
+    <Content Include="Styles\Semantic-UI\components\state.min.js" />
+    <Content Include="Styles\Semantic-UI\components\statistic.css" />
+    <Content Include="Styles\Semantic-UI\components\statistic.min.css" />
+    <Content Include="Styles\Semantic-UI\components\step.css" />
+    <Content Include="Styles\Semantic-UI\components\step.min.css" />
+    <Content Include="Styles\Semantic-UI\components\sticky.css" />
+    <Content Include="Styles\Semantic-UI\components\sticky.js" />
+    <Content Include="Styles\Semantic-UI\components\sticky.min.css" />
+    <Content Include="Styles\Semantic-UI\components\sticky.min.js" />
+    <Content Include="Styles\Semantic-UI\components\tab.css" />
+    <Content Include="Styles\Semantic-UI\components\tab.js" />
+    <Content Include="Styles\Semantic-UI\components\tab.min.css" />
+    <Content Include="Styles\Semantic-UI\components\tab.min.js" />
+    <Content Include="Styles\Semantic-UI\components\table.css" />
+    <Content Include="Styles\Semantic-UI\components\table.min.css" />
+    <Content Include="Styles\Semantic-UI\components\transition.css" />
+    <Content Include="Styles\Semantic-UI\components\transition.js" />
+    <Content Include="Styles\Semantic-UI\components\transition.min.css" />
+    <Content Include="Styles\Semantic-UI\components\transition.min.js" />
+    <Content Include="Styles\Semantic-UI\components\video.css" />
+    <Content Include="Styles\Semantic-UI\components\video.js" />
+    <Content Include="Styles\Semantic-UI\components\video.min.css" />
+    <Content Include="Styles\Semantic-UI\components\video.min.js" />
+    <Content Include="Styles\Semantic-UI\components\visibility.js" />
+    <Content Include="Styles\Semantic-UI\components\visibility.min.js" />
+    <Content Include="Styles\Semantic-UI\components\visit.js" />
+    <Content Include="Styles\Semantic-UI\components\visit.min.js" />
+    <Content Include="Styles\Semantic-UI\package.js" />
+    <Content Include="Styles\Semantic-UI\semantic.css" />
+    <Content Include="Styles\Semantic-UI\semantic.js" />
+    <Content Include="Styles\Semantic-UI\semantic.min.css" />
+    <Content Include="Styles\Semantic-UI\semantic.min.js" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\brand-icons.svg" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\icons.svg" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\outline-icons.svg" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\images\flags.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\LoginSignupController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Dashboard.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\_LayoutPage1.cshtml" />
+    <Content Include="Views\LoginSignup\LoginSignup.cshtml" />
+    <Content Include="Views\LoginSignup\Dashboard.cshtml" />
+    <Content Include="Views\LoginSignup\error.cshtml" />
+    <Content Include="Styles\Semantic-UI\.versions" />
+    <Content Include="Styles\Semantic-UI\LICENSE" />
+    <Content Include="Styles\Semantic-UI\package.json" />
+    <Content Include="Styles\Semantic-UI\README.md" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\brand-icons.eot" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\brand-icons.ttf" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\brand-icons.woff" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\brand-icons.woff2" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\icons.eot" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\icons.otf" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\icons.woff" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\outline-icons.eot" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\outline-icons.ttf" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\outline-icons.woff" />
+    <Content Include="Styles\Semantic-UI\themes\default\assets\fonts\outline-icons.woff2" />
+    <None Include="Properties\PublishProfiles\rental-housing - Web Deploy.pubxml" />
+    <Content Include="Views\_LayoutPage3.cshtml" />
+    <Content Include="Views\Profile\Profile.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Database\" />
+    <Folder Include="Views\Dashboard\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52580</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44347/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

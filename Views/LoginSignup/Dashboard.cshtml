@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+
+}
+
+
+
+<div class="wrapper2">
+    <nav>
+
+        <div class="content">
+            <div class="logo"><a href="#" style="color:white;text-decoration:none;">RentalHousing</a></div>
+            <ul class="links">
+                <li><a href="#" style="color:white;text-decoration:none;">Home</a></li>
+                <li>@Html.ActionLink("Profile","Profile", "Profile")</li>
+                <li><a href="#" style="color: white; text-decoration: none;">Booked property</a></li>
+                <li>
+                    <a href="#" class="desktop-link" style="color:white;text-decoration:none;"> <i class="fas fa-user" style="color:white;padding-right: 5px;"></i>@Session["name"]</a>
+                </li>
+                <br />
+                
+                    <form action="Logout" method="post"><button style="padding:15px 15px;border-radius:10px;margin-right:5%;">Logout</button></form>
+                
+
+            </ul>
+        </div>
+    </nav>
+</div>
+<br />
+
+
+
+<div class="jumbotron text-center" style="margin-top:20px;">
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="email" class="form-control" size="50" style="Padding:25px 25px;" placeholder="Enter Your Search" required>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container-fluid text-center bg-grey" style="position:relative;">
+    <h2>“The magic thing about home is that it feels good to leave, and it feels even better to come back.”</h2><br>
+
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="~/images/ViewProperty/e.jpg" alt="Paris" width="200" height="100">
+                <p><strong>Bharathi Nagar</strong></p>
+                <p>1 BHK Floor for Rent</p>
+                <p>in Bharathi Nagar ,Salem,Tamilnadu</p>
+                <button style="background-color:skyblue;margin:5px 5px;padding: 15px 15px; text-color:Black;">View Property</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="~/images/ViewProperty/bed.jpg" alt="New York" width="200" height="100">
+                <p><strong>Kondalampatti</strong></p>
+                <p>2 BHK Floor for Rent</p>
+                <p>Kondalampatti ,Salem,Tamilnadu</p>
+                <button style="background-color:skyblue;margin:5px 5px;padding: 15px 15px; text-color:Black;">View Property</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="~/images/ViewProperty/bed2.jpeg" alt="San Francisco" width="200" height="100">
+                <p><strong>Ayothiapattinam</strong></p>
+                <p>2 Bedrooms 1HK  house for Rent</p>
+                <p>in Ayothiapattinam , Salem,Tamilnadu</p>
+                <button style="background-color:skyblue;margin:5px 5px;padding: 15px 15px; text-color:Black;">View Property</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="~/images/ViewProperty/front.jpg" alt="San Francisco" width="200" height="100">
+                <p><strong>Jai Nagar</strong></p>
+                <p>1BHK 1Baths</p>
+                <p>in jai nagar,Salem, Tamilnadu</p>
+                <button style="background-color:skyblue;margin:5px 5px;padding: 15px 15px; text-color:Black;">View Property</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="~/images/ViewProperty/house.jpg" alt="San Francisco" width="200" height="100">
+                <p><strong>Thiruvagoundanur</strong></p>
+                <p>2BHK 2Baths</p>
+                <p>in Thiruvagoundanur,Salem, Tamilnadu</p>
+                <button style="background-color:skyblue;margin:5px 5px;padding: 15px 15px; text-color:Black;">View Property</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="~/images/ViewProperty/hall.jpg" alt="San Francisco" width="200" height="100">
+                <p><strong>Jagri Reddipatty</strong></p>
+                <p>1BHK 1Baths</p>
+                <p>in Jagri Reddipatty,Salem, Tamilnadu</p>
+                <button style="background-color:skyblue;margin:5px 5px;padding: 15px 15px; text-color:Black;">View Property</button>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="~/images/ViewProperty/kitchen.jpg" alt="San Francisco" width="200" height="100">
+                <p><strong>Shevapet</strong></p>
+                <p>3Bedrooms 2Baths</p>
+                <p>in Shevapet,Salem, Tamilnadu</p>
+                <button style="background-color:skyblue;margin:5px 5px;padding: 15px 15px; text-color:Black;">View Property</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<section id="about">
+    <h1>About Us</h1>
+    <p>Some works we do that we give our best</p>
+    <p>Our utmost response is always one step ahead with your trustworthy feedback.</p>
+    <p>Good customer service is all about bringing customers back. And about sending them away happy – happy enough to pass positive feedback about your business along to others, who may then try the product or service you offer for themselves and in their turn become repeat customers. </p>
+    <p>We believe our work, We believe our customers.</p>
+    <hr style="color:white;">
+    <div style="display: flex">
+        <div>
+            <p class="follow">Follow us on</p>
+            <p class="icons">
+                <a href="https://twitter.com/Nar_the_Phoenix" class="fa fa-twitter"></a>
+                <a href="https://instagram.com/nar_the_phoenix" class="fa fa-instagram"></a>
+                <a href="https://linkedin.com/in/narayananadaikalavan" class="fa fa-linkedin"></a>
+                <a href="https://t.me/Narayanan_A" class="fa fa-telegram" aria-hidden="true"></a>
+            </p>
+        </div>
+        <div>
+            <p style="margin-left:170px;padding-bottom:5px;">Contact Us</p>
+            <p style="margin-left:170px;padding-bottom:5px;"><a href="mailto:tamilarasan0024@gmail.com" style="color: white">rentalhousing@gmail.com</a></p>
+            <p style="margin-left: 170px;padding-bottom: 5px;"><i class="fa fa-phone"></i><a href="#" style="color: white;text-decoration: none">+91 9876543210</a></p>
+        </div>
+        <div>
+            <p class="address">Address:</p>
+            <p class="address1">123 ABC Street,</p><p class="address2">XYZ City, NewYork</p>
+        </div>
+    </div>
+   
+    <div>
+        <p class="copy">&#169 Copyright 2021|Rental Housing All Rights Reserved.</p>
+    </div>
+</section>
+
+
